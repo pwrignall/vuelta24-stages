@@ -1,7 +1,7 @@
 const stages_data = {
   "stage-01": {
     "name": "Etapa 1",
-    "date": "2024-08-17T16:23:00+0200",
+    "date": "2024-08-17T16:23:00+0100",
     "location": "Lisboa to Oeiros (PT)",
     "distance": 12.005205927832941,
     "up": 49.0,
@@ -10,7 +10,7 @@ const stages_data = {
   },
   "stage-02": {
     "name": "Etapa 2",
-    "date": "2024-08-18T11:50:00+0200",
+    "date": "2024-08-18T11:50:00+0100",
     "location": "Cascais to Our\u00e9m (PT)",
     "distance": 191.33669319839984,
     "up": 2682.0,
@@ -19,7 +19,7 @@ const stages_data = {
   },
   "stage-03": {
     "name": "Etapa 3",
-    "date": "2024-08-19T11:50:00+0200",
+    "date": "2024-08-19T11:50:00+0100",
     "location": "Lous\u00e3 to Castelo Branco (PT)",
     "distance": 191.28872646799744,
     "up": 2666.0,

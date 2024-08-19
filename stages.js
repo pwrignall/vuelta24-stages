@@ -311,6 +311,9 @@ Object.keys(stages_data).forEach((stageKey) => {
       bottomElems.appendChild(stageInfoDiv);
       stageDiv.appendChild(topElems);
       stageDiv.appendChild(bottomElems);
+      if (currentTime >= stageFinish) {
+        stageDiv.classList.add("done");
+      }
     }
   });
 });

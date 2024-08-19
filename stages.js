@@ -160,7 +160,7 @@ const stages_data = {
     "distance": 141.04871442328556,
     "up": 2649.13,
     "down": -2680.13,
-    "type": "Medium Mountain"
+    "type": "Hilly"
   },
   "stage-18": {
     "name": "Etapa 18",

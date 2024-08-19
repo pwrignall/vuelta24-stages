@@ -239,7 +239,7 @@ Object.keys(stages_data).forEach((stageKey) => {
   } else {
     etaValue += 75654.7750 * distance + 720.2032 * elevation + -138987.3812;
   };
-  const stageFinish = new Date(etaValue);
+  let stageFinish = new Date(etaValue);
   eta.textContent = `${stageFinish.toLocaleTimeString("en-GB", {
     hour: "numeric",
     minute: "numeric",
@@ -278,9 +278,13 @@ Object.keys(stages_data).forEach((stageKey) => {
   if (stageKey === "rest-01" || stageKey === "rest-02") {
     stageStartTz.textContent = "";
     stageHeader.textContent = stageHeader.textContent.slice(0, -7);
+    stageFinish = new Date(stageStart.getTime() + (12 * 60 * 60 * 1000));
   };
   stageHeader.appendChild(stageStartTz);
-  topElems.appendChild(stageHeader)
+  topElems.appendChild(stageHeader);
+  if (currentTime.getTime() > stageFinish.getTime() + (60 * 60 * 1000)) {
+    stageDiv.classList.add("done");
+  };
 
   Object.keys(stageInfo).forEach((key) => {
     if (!["name", "date", "finish"].includes(key)) {
@@ -311,9 +315,6 @@ Object.keys(stages_data).forEach((stageKey) => {
       bottomElems.appendChild(stageInfoDiv);
       stageDiv.appendChild(topElems);
       stageDiv.appendChild(bottomElems);
-      if (currentTime >= stageFinish) {
-        stageDiv.classList.add("done");
-      }
     }
   });
 });

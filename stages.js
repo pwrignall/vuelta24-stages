@@ -114,7 +114,7 @@ const stages_data = {
   },
   "stage-13": {
     "name": "Etapa 13",
-    "date": "2024-08-31T12:55:00+0200",
+    "date": "2024-08-30T12:55:00+0200",
     "location": "Lugo to Puerto de Ancares",
     "distance": 170.8627552005816,
     "up": 3409.0,
@@ -123,7 +123,7 @@ const stages_data = {
   },
   "stage-14": {
     "name": "Etapa 14",
-    "date": "2024-09-01T12:25:00+0200",
+    "date": "2024-08-31T12:25:00+0200",
     "location": "Villafranca del Bierzo to Villablino",
     "distance": 198.76981640450165,
     "up": 2830.0,
@@ -132,7 +132,7 @@ const stages_data = {
   },
   "stage-15": {
     "name": "Etapa 15",
-    "date": "2024-08-30T13:50:00+0200",
+    "date": "2024-09-01T13:50:00+0200",
     "location": " Infiesto to Valgrande-Pajares. Cuitu Negru",
     "distance": 140.53960510690368,
     "up": 3733.0,
@@ -141,7 +141,7 @@ const stages_data = {
   },
   "rest-02": {
     "name": "Rest day 2",
-    "date": "2024-09-01T12:00:00+0200",
+    "date": "2024-09-02T12:00:00+0200",
     "location": "Oviedo"
   },
   "stage-16": {

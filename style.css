@@ -103,6 +103,9 @@ path.profile-area {
     flex-direction: column;
     justify-content: space-between;
 }
+.done {
+    opacity: .3;
+}
 
 header {
     border-bottom: 2px solid var(--accent-color);
